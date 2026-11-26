@@ -1,9 +1,9 @@
 # Identitas Kelompok
 
-Nama Kelompok: [Nama Kelompok]
+Nama Kelompok: [Powerpuff]
 
 | No | Nama Lengkap | NIM | Akun GitHub |
 |:--:|--------------|-----|-------------|
-| 1 | NamaDepan NamaBelakang | 200510370311000 | @username1 |
-| 2 | NamaDepan NamaBelakang | 200510370311000 | @username2 |
-| 3 | NamaDepan NamaBelakang | 200510370311000 | @username3 |
+| 1 | Tia Dwi Febrianti | 202310370311460 | @Tiaaadf |
+| 2 | Andini Wardaningrum | 202310370311453 | @Ardaaa15 |
+| 3 | Jelita Aufashshifaari Zahda Putri Prayitno | 202310370311464 | @jelitaaufa |
