@@ -1,6 +1,6 @@
 # Identitas Kelompok
 
-Nama Kelompok: [Powerpuff]
+Nama Kelompok: Powerpuff
 
 | No | Nama Lengkap | NIM | Akun GitHub |
 |:--:|--------------|-----|-------------|
