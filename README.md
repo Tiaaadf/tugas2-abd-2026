@@ -1,5 +1,5 @@
 ---
-title: Dashboard Analitik Big Data
+title: Dashboard Analitik Pasar Kerja LinkedIn
 emoji: 📊
 colorFrom: blue
 colorTo: green
@@ -84,9 +84,9 @@ Identitas lengkap (nama, NIM, akun GitHub) dicantumkan di [`identitas.md`](ident
 
 | No | Nama | Peran / Kontribusi Utama |
 |:--:|------|--------------------------|
-| 1 | [Nama Mahasiswa 1] | Lead Architect / Data Pipeline |
-| 2 | [Nama Mahasiswa 2] | Backend Query / DuckDB Engine |
-| 3 | [Nama Mahasiswa 3] | Frontend Streamlit / Visualisasi |
+| 1 | Tia Dwi Febrianti | Lead Architect / Data Pipeline |
+| 2 | Andini Wardaningrum | Backend Query / DuckDB Engine |
+| 3 | Jelita Aufashshifaari Zahda Putri Prayitno | Frontend Streamlit / Visualisasi |
 
 ---
 
