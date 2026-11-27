@@ -8,22 +8,28 @@ Folder ini digunakan untuk menempatkan dataset yang dipakai dalam dashboard anal
 
 ## Informasi Dataset Kelompok
 
-- **Nama Dataset:** [Isi nama dataset]
-- **Sumber Data:** [Tautan sumber resmi / URL portal]
-- **Ukuran File Mentah:** [Ukuran dalam MB / GB]
-- **Jumlah Baris:** [Jumlah baris data, minimal >500 MB atau >1 Juta Baris]
-- **Format File:** [CSV / Parquet]
+- **Nama Dataset:** 1.3M LinkedIn Jobs & Skills (2024)
+- **Sumber Data:** https://www.kaggle.com/datasets/asaniczka/1-3m-linkedin-jobs-and-skills-2024
+- **Ukuran File Mentah:** 1 GB
+- **Jumlah Baris:** 1.348.454 Baris
+- **Format File:** CSV
 
 ---
 
 ## Instruksi Pengunduhan & Penyiapan Data
 
-Tuliskan perintah atau script untuk mengunduh dataset secara otomatis:
+Dataset dapat diunduh secara otomatis menggunakan Kaggle CLI (pastikan library `kaggle` sudah terpasang dan file kredensial `~/.kaggle/kaggle.json` tersedia):
 
 ```bash
-# Contoh pengunduhan menggunakan curl / wget:
-# curl -L -o data/dataset_mentah.parquet https://url-sumber-data.com/data.parquet
+pip install kaggle
+kaggle datasets download -d asaniczka/1-3m-linkedin-jobs-and-skills-2024 -p data/ --unzip
 ```
+Atau unduh secara manual melalui halaman resmi Kaggle: https://www.kaggle.com/datasets/asaniczka/1-3m-linkedin-jobs-and-skills-2024
+
+Ekstrak file hasil unduhan ke folder `data/`. File utama yang digunakan:
+
+- `data/linkedin_job_postings.csv`
+- `data/job_skills.csv`
 
 ---
 
@@ -31,7 +37,14 @@ Tuliskan perintah atau script untuk mengunduh dataset secara otomatis:
 
 | Nama Kolom | Tipe Data | Deskripsi Makna Bisnis |
 |------------|:---------:|------------------------|
-| `timestamp` | Datetime | Waktu pencatatan observasi |
-| `wilayah` | Utf8 | Nama provinsi / kota / stasiun |
-| `kategori` | Utf8 | Pengelompokan jenis data |
-| `nilai_metrik` | Float64 | Angka pengukuran utama |
+| `job_link` | Utf8 | URL unik lowongan sebagai kunci relasi antar tabel |
+| `job_tittle` | Utf8 | Judul posisi pekerjaan yang dibuka |
+| `company` | Utf8 | Nama perusahaan yang membuka lowongan |
+| `job_location` | Utf8 | Lokasi detail pekerjaan (kota/negara bagian) |
+| `search_country` | Utf8 | Negara lokasi pencarian lowongan |
+| `search_city` | Utf8 | Kota lokasi pencarian lowongan |
+| `first_seen` | Date | Tanggal lowongan pertama kali terdeteksi |
+| `last_processed_time` | Datetime | Waktu terakhir data lowongan diproses |
+| `job_level` | Utf8 | Tingkat senioritas jabatan (misal: Associate, Mid senior) |
+| `job_type` | Utf8 | Sistem kerja (Onsite, Remote, Hybrid) |
+| `job_skills` | Utf8 | Daftar keterampilan (skills) yang diminta pada lowongan |
